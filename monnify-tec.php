@@ -6,7 +6,7 @@
  * Author:		Monnify
  * Version: 	1.0.0
  * Author URI: 	https://monnify.com/
- * License: 	GPL3
+ * License: 	GPLv3 or later
  * Text Domain: monnify-for-events-calendar
  * Domain Path: /languages/
 */
