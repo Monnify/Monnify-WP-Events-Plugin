@@ -34,6 +34,26 @@ Monnify for The Events Calendar adds Monnify as a Tickets Commerce payment gatew
 6. Copy the generated Webhook URL into your Monnify dashboard's webhook settings.
 7. Enable the Monnify gateway toggle on its settings tab once credentials are saved.
 
+== External Services ==
+
+This plugin connects to Monnify's API to process payments for event ticket purchases. This connection is necessary to initialize payment transactions, verify payment status, and confirm payment receipts.
+
+**What data is sent:**
+- Customer information (name and email address)
+- Payment details (amount, currency, description, and transaction reference)
+- Payment status queries using transaction references
+- Authentication credentials (API Key and Secret Key configured in plugin settings)
+
+**When data is sent:**
+- Customer name and email are sent when a customer initiates a ticket purchase
+- Payment amounts and currency information are sent when the customer completes the checkout process
+- Transaction status is queried both when customers return from Monnify's checkout and periodically via webhook confirmations
+
+**Service provider:**
+This service is provided by Monnify (https://monnify.com/):
+- Terms of Service: https://monnify.com/terms-of-service
+- Privacy Policy: https://monnify.com/privacy-policy
+
 == Changelog ==
 
 = 1.0.0 =
