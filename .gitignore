@@ -1,5 +1,4 @@
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -23,6 +22,4 @@ build/
 Thumbs.db
 
 # Development
-.env
-.env.local
 *.backup
